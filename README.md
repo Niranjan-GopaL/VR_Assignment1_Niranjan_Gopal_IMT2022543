@@ -1,14 +1,41 @@
+
 Include a README file describing how to run your code, the methods chosen,
 results, and observations.
 d. Ensure your visual outputs, including detection, segmentation, coin counts, and the
 final panorama, are clearly labeled and included in the README file.
+e. Include the captured images in a subfolder in the repository.
+f. The code should run without any additional intervention. Ensure all dependencies
+are clearly mentioned in the README file.
 
 # About the Project
 
 There are python scripts as required by the assignment guidelines and the more interactive and intuitive jupyter notebooks available for both of the tasks separately.
 
 
-# Part 1 :  
+# Part 1 :  Coin Detection, Segmentation and Count
+
+The coin detection system employs OpenCV’s contour detection algorithm to identify circular objects within the image. 
+The implementation follows these key steps :-
+1. Convert the input image to grayscale
+2. Apply threshold to create a binary image
+3. Detect contours using cv2.findContours
+4. Filter contours based on area to eliminate noise
+
+The segmentation phase involves:
+1. Computing contour areas
+2. Sorting contours by area in descending order
+3. Applying area threshold ( ≥ 500 pixels)
+4. Creating unique color masks for each identified coin
+
+### Detection and Count
+<p align="center">
+<img src="" height = 200 width = 500>
+</p>
+
+### Segmentaion
+<p align="center">
+<img src="" height = 200 width = 500>
+</p>
 
 
 
@@ -19,46 +46,41 @@ The goal of this project is to stitch two images (named “left.jpg” and “ri
 Image stitching is  **the combination of images with overlapping sections to create a single panoramic or high-resolution image**.
 Panoramic photography is a technique that combines multiple images from the same rotating camera to form a single, wide photo. 
 
-o
-
-
-##  Steps 🪜
+Overall Algorithm :- 
 1. Detect and match features.
 2. Compute homography (perspective transform between frames) using **RANSAC** algorithm.
 3. Warp one image onto the other perspective.
 4. Combine the base and warped images while keeping track of the shift in origin.
 5. Given the combination pattern, stitch multiple images.  
 
-
-## Results 🚀
-
+## Detect descriptors in each of the Image 
 <p align="center">
-<img src="https://github.com/sajmaru/Image-Stitching-OpenCV/blob/main/Keypoints.png" height = 200 width = 500>
+<img src="" height = 200 width = 500>
 </p>
 
+## Mathcing Points using Homography Matrix
 <p align="center">
-<img src="https://github.com/sajmaru/Image-Stitching-OpenCV/blob/main/Keypoints_Mapped.png" height = 200 width = 500>
+<img src="" height = 200 width = 500>
 </p>
 
+## Inliers and Outliers after RANSAC algorithms
 <p align="center">
-<img src="https://github.com/sajmaru/Image-Stitching-OpenCV/blob/main/Stitched%20Output.jpeg" height = 200 width = 500>
+<img src="" height = 200 width = 500>
 </p>
 
-### 📚 Requirements
 
+### Requirements :-
 > - OpenCV 
 > - Python 3.x
 > - NumPy
 
-### ⭐ Getting Started
+### Usage :-
 1. Clone this repository
-2. Place your images as left.jpg and right.jpg
-3. Run the stitching script
-4. View your panoramic masterpiece!
+2. Place images in img folder, and refernce in appropriately in the code
+3. have the python environment with the above dependencies
+3. Run the `coin_count.ipynb` or `panorama.ipynb` | You can use their counterpart py scripts too
 
-
-
-In the event of this error :-
+While using panorama, in the event of this error :-
 `error: OpenCV(4.10.0) /home/conda/feedstock_root/build_artifacts/libopencv_1735819861380/work/opencv_contrib/modules/xfeatures2d/src/surf.cpp:1026: error: (-213:The function/feature is not implemented) This algorithm is patented and is excluded in this configuration; Set OPENCV_ENABLE_NONFREE CMake option and rebuild the library in function 'create'`
 which is triggered by the lines this :-
 ```py

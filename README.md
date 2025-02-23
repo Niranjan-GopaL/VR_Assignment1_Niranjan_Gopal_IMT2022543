@@ -22,12 +22,12 @@ The segmentation phase involves:
 
 ### Detection and Count
 <p align="center">
-<img src="https://github.com/Niranjan-GopaL/VR_Assignment1_Niranjan_Gopal_IMT2022543/blob/main/Coin_Detect_Segment_Count/coins_detected.png?raw=true" height = 200 width = 400>
+<img src="https://github.com/Niranjan-GopaL/VR_Assignment1_Niranjan_Gopal_IMT2022543/blob/main/Coin_Detect_Segment_Count/coins_detected.png?raw=true"  width = 900>
 </p>
 
 ### Segmentaion
 <p align="center">
-<img src="https://github.com/Niranjan-GopaL/VR_Assignment1_Niranjan_Gopal_IMT2022543/blob/main/Coin_Detect_Segment_Count/segmented_coins.png?raw=true" height = 200 width = 400>
+<img src="https://github.com/Niranjan-GopaL/VR_Assignment1_Niranjan_Gopal_IMT2022543/blob/main/Coin_Detect_Segment_Count/segmented_coins.png?raw=true"  width = 900>
 </p>
 
 
@@ -48,17 +48,17 @@ Overall Algorithm :-
 
 ## Detect descriptors in each of the Image 
 <p align="center">
-<img src="https://github.com/Niranjan-GopaL/VR_Assignment1_Niranjan_Gopal_IMT2022543/blob/main/Image-Stitching/keypoints.png?raw=true" height = 200 width = 400>
+<img src="https://github.com/Niranjan-GopaL/VR_Assignment1_Niranjan_Gopal_IMT2022543/blob/main/Image-Stitching/keypoints.png?raw=true"  width = 900>
 </p>
 
 ## Mathcing Points using Homography Matrix
 <p align="center">
-<img src="https://github.com/Niranjan-GopaL/VR_Assignment1_Niranjan_Gopal_IMT2022543/blob/main/Image-Stitching/matching_keypoints.png?raw=true" height = 200 width = 400>
+<img src="https://github.com/Niranjan-GopaL/VR_Assignment1_Niranjan_Gopal_IMT2022543/blob/main/Image-Stitching/matching_keypoints.png?raw=true"  width = 900>
 </p>
 
 ## Inliers and Outliers after RANSAC algorithms
 <p align="center">
-<img src="https://github.com/Niranjan-GopaL/VR_Assignment1_Niranjan_Gopal_IMT2022543/blob/main/Image-Stitching/inliers_outliers.png?raw=true" height = 200 width = 400>
+<img src="https://github.com/Niranjan-GopaL/VR_Assignment1_Niranjan_Gopal_IMT2022543/blob/main/Image-Stitching/inliers_outliers.png?raw=true"  width = 900>
 </p>
 
 

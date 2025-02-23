@@ -1,15 +1,8 @@
-
-Include a README file describing how to run your code, the methods chosen,
-results, and observations.
-d. Ensure your visual outputs, including detection, segmentation, coin counts, and the
-final panorama, are clearly labeled and included in the README file.
-e. Include the captured images in a subfolder in the repository.
-f. The code should run without any additional intervention. Ensure all dependencies
-are clearly mentioned in the README file.
-
 # About the Project
+This report presents the implementation and analysis of two computer vision projects: (1) a coin detection and counting system utilizing image segmentation techniques, and (2) an automated image stitching pipeline for creating panoramic images. The first part focuses on detecting and counting coins in images using contour detection and area-based segmentation. The second part demonstrates the creation of panoramic images through feature matching, homography computation, RANSAC algorithm  and image warping. Both implementations showcase practical applications of computer vision algorithms while addressing real-world challenges in image processing.
 
-There are python scripts as required by the assignment guidelines and the more interactive and intuitive jupyter notebooks available for both of the tasks separately.
+> [!NOTE]
+> There are python scripts as required by the assignment guidelines and the more interactive and intuitive jupyter notebooks available for both of the tasks separately.
 
 
 # Part 1 :  Coin Detection, Segmentation and Count

@@ -61,6 +61,10 @@ Overall Algorithm :-
 <img src="https://github.com/Niranjan-GopaL/VR_Assignment1_Niranjan_Gopal_IMT2022543/blob/main/Image-Stitching/inliers_outliers.png?raw=true"  width = 900>
 </p>
 
+## Final Panorama Image
+<p align="center">
+<img src="https://github.com/Niranjan-GopaL/VR_Assignment1_Niranjan_Gopal_IMT2022543/blob/main/Image-Stitching/task2_result.jpg?raw=true"  width = 900>
+</p>
 
 ### Requirements :-
 > - OpenCV 
